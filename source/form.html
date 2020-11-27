@@ -28,23 +28,23 @@
           <label class="form__label">Имя:<sup>*</sup> <input class="form__input" type="text" name="name" placeholder="Барсик" required></label>
         </p>
         <p class="form__input-container">
-          <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="text" name="weight" placeholder="7" required></label>
+          <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight" placeholder="7" required></label>
         </p>
         <p class="form__input-container">
-          <label class="form__label">Возраст (лет): <input class="form__input" type="text" name="age" placeholder="7"></label>
+          <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age" placeholder="7"></label>
         </p>
         <ul class="form__feeding-type-list">
           <li>
-            <input class="form__radio" type="radio" name="feeding_type" value="slim" id="slim" checked>
-            <label class="form__selectable-label form__selectable-label--radio" for="slim" tabindex="0">похудение</label>
+            <input class="visually-hidden" type="radio" name="feeding_type" value="slim" id="slim" checked>
+            <label class="form__label-radio selectable-label" for="slim" tabindex="0">похудение</label>
           </li>
           <li>
-            <input class="form__radio" type="radio" name="feeding_type" value="pro" id="pro">
-            <label class="form__selectable-label form__selectable-label--radio" for="pro" tabindex="0">набор массы</label>
+            <input class="visually-hidden" type="radio" name="feeding_type" value="pro" id="pro">
+            <label class="form__label-radio selectable-label" for="pro" tabindex="0">набор массы</label>
           </li>
           <li>
-            <input class="form__radio" type="radio" name="feeding_type" value="unknown" id="unknown">
-            <label class="form__selectable-label form__selectable-label--radio" for="unknown" tabindex="0">не знаю (нужен ваш совет)</label>
+            <input class="visually-hidden" type="radio" name="feeding_type" value="unknown" id="unknown">
+            <label class="form__label-radio selectable-label" for="unknown" tabindex="0">не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </fieldset>
@@ -69,20 +69,20 @@
         <legend class="site-group-title">Дополнительно</legend>
         <ul class="form__additionally">
           <li>
-            <input class="form__checkbox" type="checkbox" name="additional" value="sugar_substitute" id="sugar_substitute" checked>
-            <label class="form__selectable-label form__selectable-label--checkbox" for="sugar_substitute" tabindex="0">сахарозаменитель</label>
+            <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute" id="sugar_substitute" checked>
+            <label class="form__label-checkbox selectable-label" for="sugar_substitute" tabindex="0">сахарозаменитель</label>
           </li>
           <li>
-            <input class="form__checkbox" type="checkbox" name="additional" value="drink_water" id="drink_water">
-            <label class="form__selectable-label form__selectable-label--checkbox" for="drink_water" tabindex="0">питьевая вода</label>
+            <input class="visually-hidden" type="checkbox" name="additional" value="drink_water" id="drink_water">
+            <label class="form__label-checkbox selectable-label" for="drink_water" tabindex="0">питьевая вода</label>
           </li>
           <li>
-            <input class="form__checkbox" type="checkbox" name="additional" value="milk" id="milk">
-            <label class="form__selectable-label form__selectable-label--checkbox" for="milk" tabindex="0">молоко</label>
+            <input class="visually-hidden" type="checkbox" name="additional" value="milk" id="milk">
+            <label class="form__label-checkbox selectable-label" for="milk" tabindex="0">молоко</label>
           </li>
           <li>
-            <input class="form__checkbox" type="checkbox" name="additional" value="vitamins" id="vitamins">
-            <label class="form__selectable-label form__selectable-label--checkbox" for="vitamins" tabindex="0">витамины</label>
+            <input class="visually-hidden" type="checkbox" name="additional" value="vitamins" id="vitamins">
+            <label class="form__label-checkbox selectable-label" for="vitamins" tabindex="0">витамины</label>
           </li>
         </ul>
       </fieldset>
