@@ -6,14 +6,16 @@
     @text-align: center;
     @font-name: @font-name-base;
     @text-transform: none;
-    @font-weight: normal;
-    @font-style: normal) {
+    @font-weight: none) {
   font-size: @font-size;
   line-height: @line-height;
   color: @font-color;
   text-align: @text-align;
   font-family: @font-name;
-  text-transform: @text-transform;
-  font-weight: @font-weight;
-  font-style: @font-style;
+  & when not (@text-transform = none) {
+    text-transform: @text-transform;
+  }
+  & when not (@font-weight = none) {
+    font-weight: @font-weight;
+  }
 }
