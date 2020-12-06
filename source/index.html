@@ -121,7 +121,11 @@
           </address>
         </div>
       </div>
-      <iframe class="main-footer__location location" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" height="362" allowfullscreen></iframe>
+      <div class="main-footer__location location">
+        <h2 class="visually-hidden">Как добраться</h2>
+        <p class="location__image-map"><img src="../img/map.png" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8" width="320" height="362"></p>
+        <iframe class="location__interactive-map" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" height="362" allowfullscreen></iframe>
+      </div>
       <div class="main-footer__box footer-box">
         <div class="footer-box__wrapper">
           <a class="main-footer__logo"><img src="https://via.placeholder.com/128x24" alt="Cat Energy logo" width="128" height="24"></a>
