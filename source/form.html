@@ -21,7 +21,7 @@
   </header>
 
   <main class="form-main">
-    <h1 class="form-main__title site-title-level1">Функциональное питание для котов</h1>
+    <h1 class="form-main__title site-title-level1">Подбор программы</h1>
     <form class="form-main__feeding-form form" action="https://echo.htmlacademy.ru" method="get">
       <p class="form__message">Заполните анкету, и мы подберём программу питания для Вашего кота</p>
       <fieldset>
@@ -56,7 +56,7 @@
             <label class="form__label">E-mail:<sup>*</sup> <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
           </p>
           <p class="form__input-container">
-            <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8(960)900-60-90" required></label>
+            <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
           </p>
         </div>
       </fieldset>
@@ -68,7 +68,7 @@
       </fieldset>
       <fieldset>
         <legend class="site-group-title">Дополнительно</legend>
-        <ul class="form__additionally">
+        <ul class="form__additionally-list">
           <li>
             <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute" id="sugar_substitute" checked>
             <label class="form__label-checkbox selectable-label" for="sugar_substitute" tabindex="0">сахарозаменитель</label>
