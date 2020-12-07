@@ -1,0 +1,23 @@
+// mix-in 'set-font' sets font
+.set-font(
+    @font-size: @font-size-base;
+    @line-height: @font-size;
+    @font-color: @color-special-dark-grey;
+    @text-align: left;
+    @font-name: @font-name-base;
+    @text-transform: none;
+    @font-weight: none) {
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @font-color;
+  & when not (@text-align = left) {
+    text-align: @text-align;
+  }
+  font-family: @font-name;
+  & when not (@text-transform = none) {
+    text-transform: @text-transform;
+  }
+  & when not (@font-weight = none) {
+    font-weight: @font-weight;
+  }
+}

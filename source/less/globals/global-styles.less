@@ -1,0 +1,43 @@
+.site-body {
+  padding: 0;
+  margin: 0;
+}
+
+.site-paragraph {
+  .set-font(@line-height: 18px, @font-name: @font-name-base2);
+}
+
+.site-title-level1 {
+  .set-font(@font-size: @font-size-h1, @font-color: #ffffff, @font-weight: normal);
+}
+
+.site-title-level2 {
+  .set-font(@font-size: @font-size-h2, @line-height: 40px, @font-color: #000000, @font-weight: normal);
+}
+
+.site-title-level3 {
+  .set-font(@font-size: @font-size-h3, @line-height: 37px, @font-color: #000000, @font-weight: normal, @text-transform: uppercase);
+}
+
+.site-button {
+  .set-font(@font-size: 16px, @line-height: 20px, @font-color: #ffffff, @text-transform: uppercase);
+  background-color: @color-base-green;
+
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

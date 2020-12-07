@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: подбор программы питания</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="site-body">
   <header class="main-header">
-    <a class="main-header__image-logo"><img src="https://via.placeholder.com/150x150" alt="Cat Energy logo" width="33" height="38"></a>
-    <a class="main-header__text-logo"><img src="https://via.placeholder.com/150x150" alt="Cat Energy logo" width="101" height="18"></a>
+    <a class="main-header__image-logo" href="index.html"><img src="img/logo-mobile.svg" alt="Cat Energy logo" width="34" height="38"></a>
+    <a class="main-header__text-logo" href="index.html"><img src="img/logo-text-mobile.svg" alt="Cat Energy logo" width="101" height="18"></a>
     <nav class="site-navigation">
       <button class="site-navigation__toggler" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="site-navigation__list">
@@ -100,10 +101,14 @@
         </address>
       </div>
     </div>
-    <iframe class="main-footer__location location" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" width="320" height="362" allowfullscreen></iframe>
+    <div class="main-footer__location location">
+      <h2 class="visually-hidden">Как добраться</h2>
+      <p class="location__image-map"><img src="img/map.png" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8" width="320" height="362"></p>
+      <iframe class="location__interactive-map" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" height="362" allowfullscreen></iframe>
+    </div>
     <div class="main-footer__box footer-box">
       <div class="footer-box__wrapper">
-        <a class="main-footer__logo"><img src="https://via.placeholder.com/150x150" alt="Cat Energy logo" width="128" height="24"></a>
+        <a class="main-footer__logo" href="index.html"><img src="img/footer-logo.svg" alt="Cat Energy logo" width="128" height="24"></a>
         <div class="main-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
@@ -119,7 +124,7 @@
         </div>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/150x150" alt="Логотип HTML-академии" width="27" height="34"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/html-academy-logo.svg" alt="Логотип HTML-академии" width="27" height="34"></a>
         </div>
       </div>
     </div>
