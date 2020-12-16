@@ -1,3 +1,12 @@
+.site-navigation__list {
+  display: none;
+
+  @media (min-width: @medium-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .site-navigation__item {
   .set-font(@text-align: center);
 
@@ -5,7 +14,24 @@
 }
 
 .site-navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+
   .set-font(@font-size: 20px, @font-color: #000000, @text-transform: uppercase, @font-weight: 500);
 
   text-decoration: none;
+}
+
+.site-navigation__toggler {
+  @media (min-width: @medium-width) {
+    display: none;
+  }
+}
+
+.main-header__text-logo {
+  @media (min-width: @medium-width) {
+    display: none;
+  }
 }
