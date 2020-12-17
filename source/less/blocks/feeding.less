@@ -2,6 +2,13 @@
   background-color: @color-base-grey;
 }
 
+.feeding__title {
+  @media (min-width: @medium-width) {
+    font-size: @font-size-h2;
+    line-height: @font-size-h2;
+  }
+}
+
 .feeding__list {
   list-style: none;
 
@@ -16,4 +23,16 @@
   .set-font(@font-size: @font-size-base2, @font-color: #000000, @text-transform: uppercase);
 
   text-decoration: none;
+
+  @media (min-width: @medium-width) {
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+}
+
+.feeding__text {
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base2;
+    line-height: 24px;
+  }
 }

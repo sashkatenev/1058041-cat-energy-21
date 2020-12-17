@@ -1,3 +1,10 @@
+.features__title {
+  @media (min-width: @medium-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .features__list {
   list-style: none;
 
@@ -11,5 +18,12 @@
   @media (min-width: @large-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
+  }
+}
+
+.features__text {
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base2;
+    line-height: 24px;
   }
 }
