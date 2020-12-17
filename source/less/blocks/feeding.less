@@ -4,6 +4,11 @@
 
 .feeding__list {
   list-style: none;
+
+  @media (min-width: @large-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .feeding__link {
