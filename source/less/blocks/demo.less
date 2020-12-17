@@ -2,14 +2,42 @@
   background-color: #eaeaea;
 }
 
+.demo__title {
+  @media (min-width: @medium-width) {
+    font-size: @font-size-large;
+    line-height: @font-size-large;
+  }
+}
+
 .demo__parameter {
   .set-font(@font-size: @font-size-small, @font-color: @color-special-dark-grey, @font-name: @font-name-base2);
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base;
+    line-height: @font-size-base;
+  }
 }
 
 .demo__value {
   .set-font(@font-size: @font-size-h3, @font-color: #000000, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .demo__cost {
   .set-font(@line-height: 20px, @font-color: #000000, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 20px;
+  }
+}
+
+.demo__text {
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base2;
+    line-height: 24px;
+  }
 }
