@@ -1,0 +1,19 @@
+.site-body {
+  @media (min-width: @large-width) {
+    position: relative;
+  }
+}
+
+.site-body::before {
+  @media (min-width: @large-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 696px;
+    background:
+      linear-gradient(to bottom, fade(@color-base-green, 85%), fade(@color-base-green, 85%)),
+      url("../img/promo-bg-desktop.jpg") no-repeat;
+  }
+}
