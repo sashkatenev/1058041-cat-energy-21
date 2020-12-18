@@ -1,0 +1,26 @@
+.result {
+  min-width: 124px;
+  max-width: 162px;
+}
+
+.result:nth-child(2n) {
+  justify-self: end;
+}
+
+.result__parameter {
+  .set-font(@font-size: @font-size-small, @font-color: @color-special-dark-grey, @font-name: @font-name-base2);
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base;
+    line-height: @font-size-base;
+  }
+}
+
+.result__value {
+  .set-font(@font-size: @font-size-h3, @font-color: #000000, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}

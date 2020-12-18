@@ -2,42 +2,79 @@
   background-color: #eaeaea;
 }
 
+.demo__wrapper {
+  @media (min-width: @large-width) {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .demo__title {
+  grid-row: ~"1 / 2";
+
   @media (min-width: @medium-width) {
     font-size: @font-size-large;
     line-height: @font-size-large;
   }
 }
 
-.demo__parameter {
-  .set-font(@font-size: @font-size-small, @font-color: @color-special-dark-grey, @font-name: @font-name-base2);
+.demo__results-container {
+  grid-row: ~"3 / 4";
 
   @media (min-width: @medium-width) {
-    font-size: @font-size-base;
-    line-height: @font-size-base;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
-.demo__value {
-  .set-font(@font-size: @font-size-h3, @font-color: #000000, @text-transform: uppercase);
+.demo__results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
 
   @media (min-width: @medium-width) {
-    font-size: 30px;
-    line-height: 37px;
+    column-gap: 42px;
   }
 }
 
 .demo__cost {
-  .set-font(@line-height: 20px, @font-color: #000000, @text-transform: uppercase);
+  .set-font(@line-height: 20px, @font-color: #000000, @text-align: center, @text-transform: uppercase);
 
   @media (min-width: @medium-width) {
+    display: grid;
+    grid-template-columns: auto;
+
     font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: @large-width) {
+    grid-template-columns: auto auto;
+    column-gap: 60px;
   }
 }
 
 .demo__text {
+  grid-row: ~"2 / 3";
+
   @media (min-width: @medium-width) {
     font-size: @font-size-base2;
     line-height: 24px;
   }
+}
+
+.demo__presentation {
+  grid-row: ~"1 / -1";
+  grid-column: ~"2 / 3";
+
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+.demo__image-box {
+  grid-row: ~"1 / 2";
+  grid-column: ~"1 / 2";
+  justify-self: center;
 }
