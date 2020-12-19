@@ -23,18 +23,41 @@
 
 .site-title-level1 {
   .set-font(@font-size: @font-size-h1, @font-color: #ffffff, @font-weight: normal);
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-large;
+    line-height: @font-size-large;
+    text-align: left;
+
+    color: #000000;
+  }
 }
 
 .site-title-level2 {
   .set-font(@font-size: @font-size-h2, @line-height: 40px, @font-color: #000000, @font-weight: normal);
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-large;
+    line-height: @font-size-large;
+  }
 }
 
 .site-title-level3 {
   .set-font(@font-size: @font-size-h3, @line-height: 37px, @font-color: #000000, @font-weight: normal, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-h2;
+    line-height: @font-size-h2;
+  }
 }
 
 .site-group-title {
   .set-font(@font-size: @font-size-h3, @line-height: 26px, @font-color: #000000);
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-h2;
+    line-height: @font-size-h2;
+  }
 }
 
 .site-button {

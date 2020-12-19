@@ -1,22 +1,61 @@
 .form__message {
   .set-font(@line-height: 18px, @font-color: #000000, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__label {
   .set-font(@font-size: @font-size-base2, @line-height: 18px, @font-color: @color-special-dark-grey, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 20px;
+    line-height: 29.64px;
+  }
 }
+
+.form__label-checkbox {
+  color: #000000;
+}
+
 
 .form__input {
   .set-font(@font-size: @font-size-base2, @line-height: 18px, @font-color: @color-special-dark-grey, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 20px;
+    line-height: 29.64px;
+  }
 }
 
 .form__textarea {
   .set-font(@font-size: @font-size-base2, @line-height: 18px, @font-color: @color-special-dark-grey, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__submit {
+  width: 100%;
+
+  @media (min-width: @medium-width) {
+    width: auto;
+
+    font-size: 20px;
+  }
 }
 
 .form__note {
-  color: #000000;
-  line-height: 18px;
+  .set-font(@font-size: @font-size-base, @line-height: @font-size-base2, @font-color: #000000, @text-align: center, @font-name: @font-name-base2);
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base2;
+    text-align: left;
+  }
 }
 
 .form__feeding-type-list {
