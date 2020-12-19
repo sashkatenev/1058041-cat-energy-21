@@ -1,9 +1,23 @@
 .socials__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 132px;
+
   list-style: none;
 }
 
 .socials__link {
-  .set-font(@line-height: 18px, @font-name: @font-name-base2);
+  display: block;
+  width: 42px;
+  height: 42px;
+
+  font-size: 0;
+
+  background: url(../img/vk-logo.svg) no-repeat 50% 50%;
+  border-radius: 50%;
 
   text-decoration: none;
 }
