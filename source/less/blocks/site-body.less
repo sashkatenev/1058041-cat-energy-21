@@ -1,4 +1,6 @@
 .site-body {
+  --display-bg-large: none;
+
   @media (min-width: @large-width) {
     position: relative;
   }
@@ -6,6 +8,7 @@
   &::before {
     @media (min-width: @large-width) {
       content: "";
+      display: var(--display-bg-large);
       position: absolute;
       top: 0;
       left: 50%;
@@ -18,4 +21,8 @@
         url("../img/promo-bg-desktop.jpg") no-repeat;
     }
   }
+}
+
+.site-body--index {
+  --display-bg-large: block;
 }
