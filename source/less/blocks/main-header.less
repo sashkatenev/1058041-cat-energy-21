@@ -1,3 +1,32 @@
+.main-header {
+  --display-bg-large: none;
+
+  @media (min-width: @large-width) {
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: @large-width) {
+      content: "";
+      display: var(--display-bg-large);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 50%;
+      // height: 696px;
+      z-index: -1;
+
+      background:
+        linear-gradient(to bottom, fade(@color-base-green, 85%), fade(@color-base-green, 85%)),
+        url("../img/promo-bg-desktop.jpg") no-repeat;
+    }
+  }
+}
+
+.main-header--index {
+  --display-bg-large: block;
+}
+
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
