@@ -1,5 +1,5 @@
 .add-products {
-  @media (min-width: @large-width) {
+  @media (min-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2) {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11,7 +11,7 @@
 .add-products__title {
   font-weight: normal;
 
-  @media (min-width: @large-width) {
+  @media (min-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2) {
     grid-column: ~"1 / -1";
   }
 }
@@ -25,7 +25,7 @@
     // padding-left: 37px;
   }
 
-  @media (min-width: @large-width) {
+  @media (min-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2) {
     grid-column: ~"1 / 4";
   }
 }

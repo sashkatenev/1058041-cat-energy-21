@@ -10,7 +10,7 @@
   background: #6fb346 url("../img/gift-photo-mobile.jpg") no-repeat center center;
   background-size: cover;
 
-  @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+  @media (min-width: @medium-width) and (max-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2 - 1px) {
     grid-template-rows: 1fr;
     grid-template-columns: 78px auto 1fr auto 124px;
     align-items: center;
@@ -19,7 +19,7 @@
     background-image: url("../img/gift-photo-tablet.jpg");
   }
 
-  @media (min-width: @large-width) {
+  @media (min-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2) {
     background-image: url("../img/gift-photo-desktop.jpg");
   }
 
@@ -30,7 +30,7 @@
 
     grid-row: ~"2 / 3";
 
-    @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+    @media (min-width: @medium-width) and (max-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2 - 1px) {
       grid-row: auto;
       grid-column: ~"2 / 3";
     }
@@ -42,7 +42,7 @@
   width: 165px;
   margin: 0;
 
-  @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+  @media (min-width: @medium-width) and (max-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2 - 1px) {
     grid-row: auto;
     grid-column: ~"4 / 5";
 
