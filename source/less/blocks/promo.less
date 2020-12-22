@@ -6,6 +6,25 @@
   @media (min-width: @medium-width) {
     background: transparent;
   }
+
+  @media (min-width: @large-width) {
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: @large-width) {
+      content: url("../img/promo-bg-desktop.jpg");
+      position: absolute;
+      // top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 50%;
+      // height: 696px;
+      z-index: -1;
+
+      background: linear-gradient(to bottom, fade(@color-base-green, 85%), fade(@color-base-green, 85%)); //, url("../img/promo-bg-desktop.jpg") no-repeat;
+    }
+  }
 }
 
 .promo__wrapper {
