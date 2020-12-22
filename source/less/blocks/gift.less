@@ -30,6 +30,11 @@
 
     grid-row: ~"2 / 3";
 
+    @media (min-width: @medium-width) {
+      width: 80px;
+      height: 83px;
+    }
+
     @media (min-width: @medium-width) and (max-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2 - 1px) {
       grid-row: auto;
       grid-column: ~"2 / 3";

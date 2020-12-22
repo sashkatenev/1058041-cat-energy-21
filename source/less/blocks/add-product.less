@@ -37,10 +37,20 @@
   grid-area: title;
 
   .set-font(@font-size: @font-size-base2, @line-height: 16px, @font-color: @color-special-dark-grey2, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .add-product__number {
   grid-area: number;
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base2;
+    line-height: 20px;
+  }
 
   @media (min-width: @medium-width) and (max-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2 - 1px) {
     text-align: right;
@@ -51,6 +61,11 @@
   grid-area: price;
 
   text-align: right;
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base2;
+    line-height: 20px;
+  }
 
   @media (min-width: @large-width - (@site-container-horisontal-padding-large - @site-container-horisontal-padding-medium) * 2) {
     text-align: left;
