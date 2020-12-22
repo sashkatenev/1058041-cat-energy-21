@@ -1,11 +1,67 @@
 .add-product {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "number price"
+    "order order";
+  align-items: center;
+  row-gap: 10px;
+
   .set-font(@line-height: 14px, @font-name: @font-name-base2);
+
+  @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 16fr 30% 9fr 12%;
+    grid-template-areas:
+      "title . number . price"
+      "order order order order order";
+
+    // padding-top: 26px;
+    padding-bottom: 28px;
+    margin-right: 38px;
+    margin-left: 38px;
+  }
+
+  @media (min-width: @large-width) {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 80px 1fr 80px 1fr;
+    grid-template-areas: "title . number price order";
+
+    padding-bottom: 28px;
+  }
 }
 
 .add-product__title {
+  grid-area: title;
+
   .set-font(@font-size: @font-size-base2, @line-height: 16px, @font-color: @color-special-dark-grey2, @text-transform: uppercase);
 }
 
+.add-product__number {
+  grid-area: number;
+
+  @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+    text-align: right;
+  }
+}
+
 .add-product__price {
+  grid-area: price;
+
   text-align: right;
+
+  @media (min-width: @large-width) {
+    text-align: left;
+  }
+}
+
+.add-product__order {
+  grid-area: order;
+  width: 100%;
+}
+
+.add-product__button {
+  width: 100%;
 }
