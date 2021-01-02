@@ -21,3 +21,20 @@
     font-weight: @font-weight;
   }
 }
+
+// mix-in 'set-bottom-border' sets bottom-border to the block::after
+.set-bottom-border(
+    @width: 1px;
+    @left: 0;
+    @right: 0;
+    @color: #000000) {
+  &::after {
+    content: "";
+    position: absolute;
+    height: @width;
+    bottom: 0;
+    left: @left;
+    right: @right;
+    background-color: @color;
+  }
+}

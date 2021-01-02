@@ -13,15 +13,7 @@
   align-items: center;
 
   @media (max-width: @small-width-only) {
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      bottom: 0;
-      left: 0 - @site-container-horisontal-padding-small;
-      right: 0 - @site-container-horisontal-padding-small;
-      background-color: #e6e6e6;
-    }
+    .set-bottom-border(@width: 1px, @left: 0 - @site-container-horisontal-padding-small, @right: 0 - @site-container-horisontal-padding-small, @color: #e6e6e6);
   }
 
   @media (min-width: @medium-width) {
@@ -61,15 +53,7 @@
   .set-font(@text-align: center);
 
   @media (max-width: @small-width-only) {
-    &::after {
-      content: "";
-      height: 1px;
-      position: absolute;
-      bottom: 0;
-      left: 0 - @site-container-horisontal-padding-small;
-      right: 0 - @site-container-horisontal-padding-small;
-      background-color: #e6e6e6;
-    }
+    .set-bottom-border(@width: 1px, @left: 0 - @site-container-horisontal-padding-small, @right: 0 - @site-container-horisontal-padding-small, @color: #e6e6e6);
   }
 
   @media (min-width: @medium-width) {
@@ -79,16 +63,7 @@
 
 .site-navigation__item--current {
   @media (min-width: @medium-width) {
-    // border-bottom: 2px solid @color-base-green;
-    &::after {
-      content: "";
-      height: 2px;
-      position: absolute;
-      bottom: 0;
-      left: -1px;
-      right: -1px;
-      background-color: @color-base-green;
-    }
+    .set-bottom-border(@width: 2px, @left: -1px, @right: -1px, @color: @color-base-green);
   }
 
   @media (min-width: @large-width) {
