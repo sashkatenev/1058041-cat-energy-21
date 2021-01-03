@@ -1,5 +1,5 @@
 .socials {
-  display: flex;  // чтобы socials__list сжимался по контенту
+  display: flex;  // чтобы socials__list сжимался по ширине содержимого
   align-items: center;
   font-size: 0;
 
@@ -35,8 +35,17 @@
   height: 40px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-color: #666666;
   border-radius: 50%;
   text-decoration: none;
+
+  &:hover {
+    background-color: @color-base-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--vk {
     background-image: url("../img/vk-logo.svg");
