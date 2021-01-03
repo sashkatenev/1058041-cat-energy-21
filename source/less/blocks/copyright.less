@@ -3,14 +3,22 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: @medium-width) {
-    width: 163px;
+  @media (max-width: @small-width-only) {
+    min-height: 78px;
   }
 }
 
 .copyright__link {
-
-  .set-font(@font-size: @font-size-base2, @line-height: 18.4px, @font-name: @font-name-base2, @text-align: left, @font-color: @color-special-dark-grey);
-
+  padding: 10px 0;
+  .set-font(@font-size: @font-size-base2, @line-height: 18.4px, @font-name: @font-name-base2, @font-color: @color-special-dark-grey);
   text-decoration: none;
+
+  @media (min-width: @medium-width) {
+    margin: 0 22px;
+  }
+}
+
+.copyright__image-link {
+  padding: 10px 0;
+  line-height: 0;
 }

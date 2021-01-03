@@ -4,7 +4,6 @@
     grid-template-rows: 95px auto 1fr auto;
     grid-template-columns: 1fr @contacts-max-width @large-width - @contacts-max-width - @site-container-horisontal-padding-large * 2 1fr;
     // grid-template-columns: 1fr 570px 650px 1fr;
-
     // grid-template-areas:
     //   ". location location ."
     //   ". contacts location ."
@@ -17,7 +16,6 @@
   grid-row: ~"2 / 3";
   grid-column: ~"2 / 3";
   // grid-area: contacts;
-
   z-index: 1;
 }
 
@@ -32,6 +30,13 @@
   grid-row: ~"4 / 5";
   grid-column: ~"1 / -1";
   // grid-area: footer-bar;
-
   background-color: @color-base-grey;
+
+  @media (min-width: @medium-width) {
+    min-height: 150px;
+  }
+
+  @media (min-width: @large-width) {
+    min-height: 149px;
+  }
 }
