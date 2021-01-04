@@ -28,6 +28,8 @@
 }
 
 .promo__wrapper {
+  padding-top: 2px;
+  margin-bottom: 22px;
   text-align: center;
 
   @media (min-width: @medium-width) {
@@ -45,9 +47,12 @@
 .promo__title {
   text-align: center;
 
+  @media (max-width: @small-width-only) {
+    margin: 25px 0;
+  }
+
   @media (min-width: @medium-width) {
     grid-column: ~"2 / 3";
-
     text-align: left;
   }
 
@@ -59,10 +64,14 @@
 .promo__slogan {
   .set-font(@font-color: #ffffff, @text-align: center, @text-transform: uppercase);
 
+  @media (max-width: @small-width-only) {
+    margin: 0;
+    margin-bottom: 29px;
+  }
+
   @media (min-width: @medium-width) {
     grid-row: ~"2 / 3";
     grid-column: ~"2 / 3";
-
     .set-font(@font-size: 20px, @line-height: 20px, @font-color: #000000, @text-transform: uppercase);
   }
 }
@@ -80,6 +89,8 @@
 }
 
 .promo__link-container {
+  margin-top: 3px;
+
   @media (min-width: @medium-width) {
     grid-row: ~"3 / 4";
     grid-column: ~"2 / 3";
@@ -87,6 +98,8 @@
 }
 
 .promo__image {
+  display: block;
+
   @media (min-width: @medium-width) {
     width: 709px;
     height: 609px;
