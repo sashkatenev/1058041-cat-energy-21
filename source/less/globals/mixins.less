@@ -22,9 +22,11 @@
   }
 }
 
-// mix-in 'set-bottom-border' sets bottom-border to the block::after
-.set-bottom-border(
+// mix-in 'set-horizontal-border' sets bottom- or top-border to the block::after
+.set-horizontal-border(
     @width: 1px;
+    @top: auto;
+    @bottom: auto;
     @left: 0;
     @right: 0;
     @color: #000000) {
@@ -34,7 +36,8 @@
     content: "";
     position: absolute;
     height: @width;
-    bottom: 0;
+    top: @top;
+    bottom: @bottom;
     left: @left;
     right: @right;
     background-color: @color;
