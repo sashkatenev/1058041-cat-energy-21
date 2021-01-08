@@ -103,3 +103,11 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.break-not-small {
+  display: none;
+
+  @media (min-width: @medium-width) {
+    display: inline;
+  }
+}
