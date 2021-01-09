@@ -71,7 +71,7 @@
             </p>
           </li>
           <li class="features__item features__item--quickly">
-            <p class="features__text site-paragraph">Уже через месяц наслаждайтесь изменениями к лучшему <br class="break-not-small">вашего питомца!</p>
+            <p class="features__text site-paragraph">Уже через месяц наслаждайтесь изменениями к лучшему <br class="break-not-small-width">вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -83,19 +83,40 @@
         <p class="demo__text site-paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день.</p>
-        <div class="demo__results-container">
-          <div class="demo__results">
-            <p class="demo__result result">
-              <span class="result__parameter">снижение веса</span>
-              <span class="result__value">5 кг</span>
-            </p>
-            <p class="demo__result result">
-              <span class="result__parameter">затрачено времени</span>
-              <span class="result__value">60 дней</span>
-            </p>
-          </div>
-          <p class="demo__cost"><span class="demo__cost-label">Затраты на питание:</span> <span class="demo__cost-value">15 000 руб.</span></p>
-        </div>
+        <table class="demo__table">
+          <thead class="visually-hidden">
+            <tr>
+              <td>Показатель</td>
+              <td>Значение</td>
+            </tr>
+          </thead>
+          <tbody class="demo__results-container">
+            <tr>
+              <td class="demo__table-results" colspan="2">
+                <table class="demo__table-results">
+                  <tbody class="demo__results">
+                    <tr class="demo__result result">
+                      <td class="result__parameter">снижение веса</td>
+                      <td class="result__value">5 кг</td>
+                    </tr>
+                    <tr class="demo__result result">
+                      <td class="result__parameter">затрачено времени</td>
+                      <td class="result__value">60 дней</td>
+                    </tr>
+                    <tr class="demo__result result">
+                      <td class="result__parameter">затрачено времени</td>
+                      <td class="result__value">60 дней</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr class="demo__cost">
+              <td class="demo__cost-label">Затраты на питание:</td>
+              <td class="demo__cost-value">15 000 руб.</td>
+            </tr>
+          </tbody>
+        </table>
         <div class="demo__presentation">
           <div class="demo__image-box demo__image-box--before">
             <img class="demo__image" src="img/cat-before-mobile.png" alt="Вид кота до" width="311" height="232">
