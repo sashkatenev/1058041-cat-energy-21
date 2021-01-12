@@ -148,10 +148,28 @@
   grid-column: ~"1 / 2";
   justify-self: center;
   line-height: 0;
+  overflow: hidden;
+}
+
+.demo__image-box img {
+  max-width: none;
+  object-fit: none;
+}
+
+.demo__image-box--before {
+  transform: translateX(-69px);
+}
+
+.demo__image-box--before img {
+  margin-right: -138px;
 }
 
 .demo__image-box--after {
-  opacity: 0;
+  transform: translateX(62.75px);
+}
+
+.demo__image-box--after img {
+  margin-left: -125.5px;
 }
 
 .demo__slider {

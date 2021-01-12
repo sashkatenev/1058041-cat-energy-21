@@ -1,4 +1,7 @@
 .slider {
+  --sliderPosition: 0.5;   /* [0.0 - 1.0] */
+  --pinOffset: 6px;
+  --pinWidth: 34px;
   display: grid;
   grid-template-columns: auto 17px 1fr 17px auto;
   grid-template-rows: 40px;
@@ -44,7 +47,7 @@
   // width: 84px;
   width: 100%;
   height: 14px;
-  // padding: 4px 0;
+  // padding: 0 6px;
   // margin: 0 16px;
   background-color: #ffffff;
   border: 1px solid @color-special-grey;
@@ -58,26 +61,26 @@
 }
 
 .slider__pin {
+  position: relative;
+  // box-sizing: border-box;
   grid-row: ~"1 / 2";
   grid-column: ~"3 / 4";
   justify-self: start;
-  position: relative;
-  // top: 50%;
-  // left: 0;
-  width: 35px;
+  left: var(--pinOffset);
+  width: calc(var(--sliderPosition) * 100% - 2 * var(--pinOffset) * var(--sliderPosition));
   height: 6px;
   padding: 0;
-  margin: 0 6px;
+  // margin: 0 6px;
   background-color: @color-base-green;
   border: none;
   border-radius: 6px;
 
   @media (min-width: @medium-width) {
-    width: 34px;
-    height: 34px;
-    margin: 0;
+    width: var(--pinWidth);
+    height: var(--pinWidth);
+    // margin: 0;
+    left: calc(var(--sliderPosition) * 100% - var(--pinWidth) / 2);
     background-color: @color-base-green;
-    border: none;
     border-radius: 50%;
     box-shadow:
       0 1px 3px 0 rgba(0, 0, 0, 0.16),
