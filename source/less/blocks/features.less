@@ -11,7 +11,7 @@
   padding: 0;
   list-style: none;
   counter-reset: items-counter;
-  padding-bottom: 42px;
+  margin-bottom: 42px;
 
   @media (min-width: @medium-width) {
     display: grid;
@@ -19,6 +19,7 @@
     row-gap: 37px;
     column-gap: 60px;
     padding-bottom: 47px;
+    margin: 0;
   }
 
   @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
@@ -70,13 +71,12 @@
   }
 
   &::after {
-    .set-font(@font-size: 280px, @line-height: 280px, @font-color: @color-base-grey);
-    z-index: -1;
-
     @media (min-width: @medium-width) {
       content: counter(items-counter);
       grid-row: ~"1 / -1";
       grid-column: ~"2 / 3";
+      .set-font(@font-size: 280px, @line-height: 280px, @font-color: @color-base-grey);
+      z-index: -1;
     }
   }
 
