@@ -4,10 +4,9 @@ var demoSlider = document.querySelector(".demo__slider");
 
 if (siteNavigation) {
   siteNavigation.classList.add("site-navigation--closed");
+  siteNavigation.classList.remove("site-navigation--no-js");
 
   if (siteNavigationToggleButton) {
-    siteNavigationToggleButton.removeAttribute("disabled");
-
     siteNavigationToggleButton.addEventListener("click", function (evt) {
       if (siteNavigation.classList.contains("site-navigation--closed")) {
         siteNavigation.classList.remove("site-navigation--closed");
