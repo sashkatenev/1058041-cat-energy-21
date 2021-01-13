@@ -22,6 +22,10 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 12px;
+
+  & div {
+    line-height: 0;
+  }
 }
 
 .form__label {
@@ -33,12 +37,41 @@
 
   @media (min-width: @medium-width) {
     font-size: 20px;
-    line-height: 29.64px;
+    line-height: 30px;
   }
 }
 
 .form__label-checkbox {
+  position: relative;
   color: #000000;
+
+  &::before {
+    border-radius: 0;
+    margin-right: 19px;
+  }
+
+  input:checked + &::before {
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  input:checked + &::after {
+    background-image: url("../img/checked.svg");
+  }
+
+  input:disabled + &::after {
+    opacity: 0.3;
+  }
 }
 
 .form__input {
@@ -50,7 +83,7 @@
     margin-left: 10px;
 
     font-size: 20px;
-    line-height: 29.64px;
+    line-height: 30px;
   }
 }
 
@@ -115,6 +148,10 @@
   @media (min-width: @large-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
+  }
+
+  & div {
+    line-height: 0;
   }
 }
 
