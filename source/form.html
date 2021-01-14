@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html class="site" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: подбор программы питания</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="site-body">
   <header class="main-header site-container">
     <nav class="site-navigation site-navigation--no-js">
@@ -34,9 +36,12 @@
         <div class="form-main__wrapper site-container">
           <div class="form__main-data">
             <div>
-              <label class="form__label">Имя:<sup>*</sup> <input class="form__input" type="text" name="name" placeholder="Барсик" required></label>
-              <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight" placeholder="7" required></label>
-              <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age" placeholder="7"></label>
+              <label class="form__label">Имя:<sup>*</sup> <input class="form__input" type="text" name="name"
+                  placeholder="Барсик" required></label>
+              <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight"
+                  placeholder="7" required></label>
+              <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age"
+                  placeholder="7"></label>
             </div>
             <div class="form__feeding-type-list">
               <div>
@@ -49,27 +54,34 @@
               </div>
               <div>
                 <input class="visually-hidden" type="radio" name="feeding_type" value="unknown" id="unknown">
-                <label class="form__label-radio selectable-label" for="unknown" tabindex="0">не знаю (нужен ваш совет)</label>
+                <label class="form__label-radio selectable-label" for="unknown" tabindex="0">не знаю (нужен ваш
+                  совет)</label>
               </div>
             </div>
           </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <div class="site-group-title">Контактные данные (владельца кота)</div>
+        <div class="site-group-title">
+          <legend>Контактные данные (владельца кота)</legend>
+        </div>
         <div class="form-main__wrapper site-container">
           <div class="form__contacts">
             <!-- <div class="form__input-container"> -->
-              <label class="form__label">E-mail:<sup>*</sup> <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
+            <label class="form__label">E-mail:<sup>*</sup> <input class="form__input form__input--email" type="email"
+                name="email" placeholder="kuklachev@gmail.com" required></label>
             <!-- </div> -->
             <!-- <div class="form__input-container"> -->
-              <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
+            <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel"
+                name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
             <!-- </div> -->
           </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="site-group-title">Комментарий</legend>
+        <div class="site-group-title">
+          <legend>Комментарий</legend>
+        </div>
         <div class="form-main__wrapper site-container">
           <div class="form__textbox">
             <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -77,12 +89,16 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="site-group-title">Дополнительно</legend>
+        <div class="site-group-title">
+          <legend>Дополнительно</legend>
+        </div>
         <div class="form-main__wrapper site-container">
           <div class="form__additionally-list">
             <div>
-              <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute" id="sugar_substitute" checked>
-              <label class="form__label-checkbox selectable-label" for="sugar_substitute" tabindex="0">сахарозаменитель</label>
+              <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute"
+                id="sugar_substitute" checked>
+              <label class="form__label-checkbox selectable-label" for="sugar_substitute"
+                tabindex="0">сахарозаменитель</label>
             </div>
             <div>
               <input class="visually-hidden" type="checkbox" name="additional" value="drink_water" id="drink_water">
@@ -96,7 +112,7 @@
               <input class="visually-hidden" type="checkbox" name="additional" value="vitamins" id="vitamins">
               <label class="form__label-checkbox selectable-label" for="vitamins" tabindex="0">витамины</label>
             </div>
-            <!-- <div class="form__submit-container"><button class="form__submit site-button" type="submit">Отправить заявку</button></div> -->
+            <!-- <div class="form__submit-container"><button class="form__submit site-button"type="submit">Отправить заявку</button></div> -->
             <button class="form__submit site-button" type="submit">Отправить заявку</button>
             <p class="form__note site-paragraph"><sup>*</sup> &mdash; Обязательные поля</p>
           </div>
@@ -123,15 +139,15 @@
     </div>
     <div class="main-footer__bar">
       <div class="footer-bar__wrapper site-container footer-bar">
-        <a class="main-footer__logo site-button" href="index.html"><img src="img/footer-logo.svg" alt="Cat Energy logo" width="128" height="24"></a>
+        <a class="main-footer__logo site-button" href="index.html"><img src="img/footer-logo.svg" alt="Cat Energy logo"
+            width="128" height="24"></a>
         <div class="main-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">Мы во ВКонтакте</a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--instagram" href="https://instagram.com/htmlacademy">Мы в
-                Instagram</a>
+              <a class="socials__link socials__link--instagram" href="https://instagram.com/htmlacademy">Мы в Instagram</a>
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--fb" href="https://facebook.com/htmlacademy">Мы в Facebook</a>
@@ -147,4 +163,5 @@
   </footer>
   <script src="js/script.js"></script>
 </body>
+
 </html>
