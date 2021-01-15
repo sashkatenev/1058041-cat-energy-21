@@ -7,9 +7,10 @@
     background: transparent;
   }
 
-  // @media (min-width: @large-width) {
-  //   position: relative;
-  // }
+  @media (min-width: @large-width) {
+    // position: relative;
+    padding-bottom: 21px;
+  }
 
   &::before {
     @media (min-width: @large-width) {
@@ -99,21 +100,6 @@
     grid-row: ~"6 / 7";
   }
 }
-
-// .promo__link-container {
-//   @media (max-width: @small-width-only) {
-//     margin-top: 3px;
-//   }
-
-//   @media (min-width: @medium-width) {
-//     grid-row: ~"7 / 8";
-//     grid-column: ~"2 / 3";
-//   }
-
-//   @media (min-width: @large-width) {
-//     grid-row: ~"6 / 7";
-//   }
-// }
 
 .promo__image {
   display: block;
