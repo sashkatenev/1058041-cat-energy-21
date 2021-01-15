@@ -21,3 +21,26 @@
     font-weight: @font-weight;
   }
 }
+
+// mix-in 'set-horizontal-border' sets bottom- or top-border to the block::after
+.set-horizontal-border(
+    @width: 1px;
+    @top: auto;
+    @bottom: auto;
+    @left: 0;
+    @right: 0;
+    @color: #000000;
+    @style: solid) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: @width;
+    top: @top;
+    bottom: @bottom;
+    left: @left;
+    right: @right;
+    background-color: @color;
+  }
+}

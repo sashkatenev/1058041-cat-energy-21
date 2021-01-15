@@ -1,31 +1,188 @@
-.feeding__item {
-  background-color: @color-base-grey;
+.feeding__wrapper {
+  padding-top: 22px;
+
+  @media (min-width: @medium-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @large-width) {
+    padding-top: 82px;
+  }
 }
 
 .feeding__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 
   @media (min-width: @large-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: start;
     column-gap: 80px;
   }
 }
 
-.feeding__link {
-  .set-font(@font-size: @font-size-base2, @font-color: #000000, @text-transform: uppercase);
+.feeding__item {
+  display: grid;
+  grid-template-columns: minmax(90px, min-content) auto;
+  align-items: center;
+  padding: 20px 0 12px;
+  margin-bottom: 20px;
+  background-color: @color-base-grey;
 
+  @media (min-width: @medium-width) {
+    grid-template-columns: 1fr auto;
+    padding: 50px 0 47px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @large-width) {
+    grid-template-columns: minmax(214px, min-content) auto;
+    padding: 20px 0 48px;
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    width: var(--width);
+    height: var(--height);
+    justify-self: center;
+    line-height: 0;
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-origin: content-box;
+    background-size: contain;
+
+    @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+      grid-row: ~"1 / 4";
+      grid-column: ~"2 / 3";
+      align-self: start;
+      width: calc(var(--width) * 4);
+      height: calc(var(--height) * 4);
+      padding: 40px 60px 0 18px;
+    }
+
+    @media (min-width: @large-width) {
+      justify-self: start;
+      width: calc(var(--width) * 2);
+      height: calc(var(--height) * 2);
+      padding: 27px 0 0 52px;
+    }
+  }
+
+  &--slim::before {
+    content: "";
+    --width: 50px;
+    --height: 53px;
+    background-image: url("../img/cat-slim.svg");
+
+    @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+      padding-top: 30px;
+    }
+
+    @media (min-width: @large-width) {
+      padding-top: 21px;
+    }
+  }
+
+  &--pro::before {
+    content: "";
+    --width: 67px;
+    --height: 50px;
+    background-image: url("../img/cat-pro.svg");
+
+    @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+      padding-right: 28px;
+    }
+
+    @media (min-width: @large-width) {
+      padding-left: 33px;
+    }
+  }
+}
+
+.feeding__title {
+  padding: 10px 20px 9px 0;
+
+  @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+    grid-column: ~"1 / 2";
+    padding: 27px 20px 9px 53px;
+  }
+
+  @media (min-width: @large-width) {
+    padding: 57px 20px 34px 0;
+  }
+}
+
+.feeding__link-container {
+  grid-column: ~"1 / -1";
+  padding: 10px 19px;
+  line-height: 0;
+
+  @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+    grid-column: ~"1 / 2";
+  }
+
+  @media (min-width: @medium-width) {
+    padding: 11px 0 11px 52px;
+  }
+
+  @media (min-width: @large-width) {
+    padding: 11px 52px;
+  }
+}
+
+.feeding__link {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  .set-font(@font-size: @font-size-base2, @font-color: #000000, @text-transform: uppercase);
   text-decoration: none;
 
   @media (min-width: @medium-width) {
     font-size: 20px;
-    line-height: 29.64px;
+    line-height: 30px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 12px;
+    margin-left: 28px;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .feeding__text {
+  grid-column: ~"1 / -1";
+  padding: 20px 20px 32px 20px;
+  margin: 0;
+
+  @media (max-width: @small-width-only) {
+    .set-horizontal-border(@bottom: 9px, @left: 20px, @right: 20px, @color: #d9d9d9);
+  }
+
+  @media (min-width: @medium-width) and (max-width: @large-width - 1px) {
+    grid-column: ~"1 / 2";
+    padding: 15px 0 40px 52px;
+  }
+
   @media (min-width: @medium-width) {
     font-size: @font-size-base2;
     line-height: 24px;
+  }
+
+  @media (min-width: @large-width) {
+    padding: 39px 35px 16px 52px;
   }
 }

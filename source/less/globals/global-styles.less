@@ -1,6 +1,17 @@
 .site-body {
   padding: 0;
   margin: 0;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.site-body img {
+  max-width: 100%;
+  height: auto;
+  // width: 100%;
+  // height: 100%;
+  // object-fit: cover;
+  line-height: 0;
 }
 
 .site-container {
@@ -22,6 +33,7 @@
 }
 
 .site-title-level1 {
+  margin: 0;
   .set-font(@font-size: @font-size-h1, @font-color: #ffffff, @font-weight: normal);
 
   @media (min-width: @medium-width) {
@@ -43,6 +55,7 @@
 }
 
 .site-title-level3 {
+  margin: 0;
   .set-font(@font-size: @font-size-h3, @line-height: 37px, @font-color: #000000, @font-weight: normal, @text-transform: uppercase);
 
   @media (min-width: @medium-width) {
@@ -64,9 +77,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  box-sizing: border-box;
+  padding: 11px 20px;
   border: none;
-
   .set-font(@font-size: 16px, @line-height: 20px, @font-color: #ffffff, @text-transform: uppercase);
   text-align: center;
 
@@ -89,4 +102,12 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.break-not-small-width {
+  display: none;
+
+  @media (min-width: @medium-width) {
+    display: inline;
+  }
 }

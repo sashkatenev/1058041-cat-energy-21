@@ -1,13 +1,37 @@
 .footer-bar {
   @media (min-width: @medium-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    padding: 55px 0;
   }
 }
 
-.main-footer__logo {
+.footer-bar__container {
+  @media (min-width: @medium-width) {
+    padding-top: 28px;
+  }
+
+  @media (min-width: @large-width) {
+    padding-top: 30px;
+  }
+}
+
+.footer-bar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 39px 20px 32px;
   background-color: transparent;
+
+  @media (max-width: @small-width-only) {
+    .set-horizontal-border(@bottom: 0, @color: #d9d9d9);
+  }
+
+  @media (min-width: @medium-width) {
+    padding-top: 32px;
+    padding-left: 0;
+  }
+}
+
+.footer-bar__socials {
+  margin: 0 auto;
 }
