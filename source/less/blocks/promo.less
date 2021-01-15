@@ -45,14 +45,17 @@
 }
 
 .promo__title {
+  max-width: 280px;
+  margin: 0 auto;
   text-align: center;
 
   @media (max-width: @small-width-only) {
-    margin: 0;
     padding: 27px 0 25px;
   }
 
   @media (min-width: @medium-width) {
+    margin: 0;
+    max-width: 550px;
     grid-row: ~"2 / 3";
     grid-column: ~"2 / 3";
     text-align: left;
