@@ -35,10 +35,13 @@
       <fieldset class="form__fieldset">
         <div class="form-main__wrapper site-container">
           <div class="form__main-data">
-            <div>
-              <label class="form__label">Имя:<sup>*</sup> <input class="form__input" type="text" name="name" placeholder="Барсик" required></label>
-              <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight" placeholder="7" required></label>
-              <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age" placeholder="7"></label>
+            <div class="form__metrics">
+              <label class="form__label">Имя:<sup>*</sup> <input class="form__input" type="text" name="name"
+                  placeholder="Барсик" required></label>
+              <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight"
+                  placeholder="7" required></label>
+              <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age"
+                  placeholder="7"></label>
             </div>
             <div class="form__feeding-type-list">
               <div>
@@ -58,20 +61,26 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="site-group-title"><span>Контактные данные (владельца кота)</span></legend>
+        <div class="site-group-title">
+          <legend>Контактные данные (владельца кота)</legend>
+        </div>
         <div class="form-main__wrapper site-container">
           <div class="form__contacts">
             <!-- <div class="form__input-container"> -->
-            <label class="form__label">E-mail:<sup>*</sup> <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
+            <label class="form__label">E-mail:<sup>*</sup> <input class="form__input form__input--email" type="email"
+                name="email" placeholder="kuklachev@gmail.com" required></label>
             <!-- </div> -->
             <!-- <div class="form__input-container"> -->
-            <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
+            <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel"
+                name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
             <!-- </div> -->
           </div>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <div class="site-group-title">Комментарий</div>
+        <div class="site-group-title">
+          <legend>Комментарий</legend>
+        </div>
         <div class="form-main__wrapper site-container">
           <div class="form__textbox">
             <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -79,12 +88,16 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <div class="site-group-title">Дополнительно</div>
+        <div class="site-group-title">
+          <legend>Дополнительно</legend>
+        </div>
         <div class="form-main__wrapper site-container">
           <div class="form__additionally-list">
             <div>
-              <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute" id="sugar_substitute" checked>
-              <label class="form__label-checkbox selectable-label" for="sugar_substitute" tabindex="0">сахарозаменитель</label>
+              <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute"
+                id="sugar_substitute" checked>
+              <label class="form__label-checkbox selectable-label" for="sugar_substitute"
+                tabindex="0">сахарозаменитель</label>
             </div>
             <div>
               <input class="visually-hidden" type="checkbox" name="additional" value="drink_water" id="drink_water">
@@ -121,7 +134,7 @@
       <h2 class="visually-hidden">Как добраться</h2>
       <p class="location__image-map"><img src="img/map.png" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8" width="320" height="362"></p>
       <!-- <iframe class="location__interactive-map" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" height="362" allowfullscreen></iframe> -->
-      <iframe class="location__interactive-map" src="" height="362" allowfullscreen></iframe>
+      <!-- <iframe class="location__interactive-map" src="" height="362" allowfullscreen></iframe> -->
     </div>
     <div class="main-footer__bar">
       <div class="footer-bar__wrapper site-container footer-bar">
