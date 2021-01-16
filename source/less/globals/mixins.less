@@ -22,7 +22,7 @@
   }
 }
 
-// mix-in 'set-horizontal-border' sets bottom- or top-border to the block::after
+// mix-in 'set-horizontal-border' sets bottom- or top-border to the ::after or ::before
 .set-horizontal-border(
     @width: 1px;
     @top: auto;
@@ -30,10 +30,11 @@
     @left: 0;
     @right: 0;
     @color: #000000;
-    @style: solid) {
+    @style: solid;
+    @pseudo: ~"::after") {
   position: relative;
 
-  &::after {
+  &@{pseudo} {
     content: "";
     position: absolute;
     height: @width;
