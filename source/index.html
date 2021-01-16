@@ -12,7 +12,7 @@
       <div class="site-navigation__logo-container">
         <a class="site-navigation__image-logo"><img src="img/logo-mobile.svg" alt="Cat Energy logo" width="34" height="38"></a>
         <a class="site-navigation__text-logo"><img src="img/logo-text-mobile.svg" alt="Cat Energy logo" width="101" height="18"></a>
-        <button class="site-navigation__toggler" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="site-navigation__toggler" type="button" aria-label="Открыть меню"></button>
       </div>
       <ul class="site-navigation__list">
         <li class="site-navigation__item site-navigation__item--current"><a class="site-navigation__link">Главная</a></li>
@@ -25,12 +25,10 @@
   <main class="index-main">
     <section class="promo">
       <div class="promo__wrapper site-container">
-        <h1 class="promo__title site-title-level1">Функциональное <br>питание для котов</h1>
+        <h1 class="promo__title site-title-level1">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <img class="promo__image" src="img/promo-index-can-mobile.png" alt="Образец корма для вашего кота" width="280" height="270">
-        <div class="promo__link-container">
-          <a class="promo__link site-button" href="form.html">Подобрать программу</a>
-        </div>
+        <a class="promo__link site-button" href="form.html">Подобрать программу</a>
       </div>
     </section>
 
@@ -40,14 +38,12 @@
         <ul class="feeding__list">
           <li class="feeding__item feeding__item--slim">
             <h3 class="feeding__title site-title-level3">Похудение</h3>
-            <p class="feeding__text site-paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <p class="feeding__text site-paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <div class="feeding__link-container"><a class="feeding__link" href="#">Каталог Slim</a></div>
           </li>
           <li class="feeding__item feeding__item--pro">
             <h3 class="feeding__title site-title-level3">Набор массы</h3>
-            <p class="feeding__text site-paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-              Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <p class="feeding__text site-paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <div class="feeding__link-container"><a class="feeding__link" href="#">Каталог Pro</a></div>
           </li>
         </ul>
@@ -80,9 +76,7 @@
     <section class="demo">
       <div class="demo__wrapper site-container">
         <h2 class="demo__title site-title-level2">Живой пример</h2>
-        <p class="demo__text site-paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой <br>обычный корм на Cat Energy
-          Slim. Отличный результат <br>без изнуряющих тренировок! При этом он не менял своих <br>привычек и по-прежнему спит по 16
-          часов в день.</p>
+        <p class="demo__text site-paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <table class="demo__table">
           <thead class="visually-hidden">
             <tr>
@@ -140,17 +134,16 @@
   <footer class="main-footer">
     <div class="main-footer__contacts">
       <div class="contacts__wrapper site-container contacts">
-        <p class="contacts__invite">Приглашаем <br>к сотрудничеству дилеров!</p>
+        <p class="contacts__invite">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
-          <p class="address__city">Санкт-Петербург</p>
+          <p class="contacts__city">Санкт-Петербург</p>
         </address>
       </div>
     </div>
     <div class="main-footer__location location">
       <h2 class="visually-hidden">Как добраться</h2>
-      <p class="location__image-map"><img src="img/map.png" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8" width="320" height="362"></p>
+      <img class="location__image-map" src="img/map.png" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8" width="320" height="362">
       <!-- <iframe class="location__interactive-map" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" height="362" allowfullscreen></iframe> -->
-      <iframe class="location__interactive-map" src="" height="362" allowfullscreen></iframe>
     </div>
     <div class="main-footer__bar">
       <div class="footer-bar__container site-container footer-bar">

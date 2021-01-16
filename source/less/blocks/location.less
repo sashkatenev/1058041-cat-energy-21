@@ -1,19 +1,18 @@
 .location {
-  position: relative;
-  line-height: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
   background-color: #aadaff;
 }
 
 .location__image-map {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  text-align: center;
+  grid-row: ~"1 / -1";
+  grid-column: ~"1 / -1";
 }
 
 .location__interactive-map {
-  position: relative;
+  grid-row: ~"1 / -1";
+  grid-column: ~"1 / -1";
   width: 100%;
   border: none;
 }
