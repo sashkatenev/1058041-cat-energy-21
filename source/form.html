@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html class="site" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: подбор программы питания</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="site-body">
   <header class="main-header site-container">
     <nav class="site-navigation site-navigation--no-js">
@@ -25,14 +27,18 @@
   <main class="form-main">
     <div class="form-main__wrapper site-container">
       <h1 class="form-main__title site-title-level1">Подбор программы</h1>
-      <form class="form-main__feeding-form form" action="https://echo.htmlacademy.ru" method="get">
+    </div>
+    <form class="form-main__feeding-form form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="form-main__wrapper site-container">
         <p class="form__message">Заполните анкету, и мы подберём <br>программу питания для Вашего кота</p>
-        <fieldset class="form__fieldset">
+      </div>
+      <fieldset class="form__fieldset">
+        <div class="form-main__wrapper site-container">
           <div class="form__main-data">
-            <div>
+            <div class="form__metrics">
               <label class="form__label">Имя:<sup>*</sup> <input class="form__input" type="text" name="name" placeholder="Барсик" required></label>
-              <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight" placeholder="7" required></label>
-              <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age" placeholder="7"></label>
+              <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight" min="0" placeholder="7" required></label>
+              <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age" min="0" placeholder="7"></label>
             </div>
             <div class="form__feeding-type-list">
               <div>
@@ -49,26 +55,38 @@
               </div>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="site-group-title">Контактные данные (владельца кота)</legend>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="site-group-title">
+          <legend>Контактные данные (владельца кота)</legend>
+        </div>
+        <div class="form-main__wrapper site-container">
           <div class="form__contacts">
             <!-- <div class="form__input-container"> -->
-              <label class="form__label">E-mail:<sup>*</sup> <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
+            <label class="form__label form__label--email">E-mail:<sup>*</sup> <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
             <!-- </div> -->
             <!-- <div class="form__input-container"> -->
-              <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
+            <label class="form__label form__label--tel">Телефон:<sup>*</sup> <input class="form__input" type="tel" name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
             <!-- </div> -->
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="site-group-title">Комментарий</legend>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="site-group-title">
+          <legend>Комментарий</legend>
+        </div>
+        <div class="form-main__wrapper site-container">
           <div class="form__textbox">
             <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="site-group-title">Дополнительно</legend>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="site-group-title">
+          <legend>Дополнительно</legend>
+        </div>
+        <div class="form-main__wrapper site-container">
           <div class="form__additionally-list">
             <div>
               <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute" id="sugar_substitute" checked>
@@ -86,13 +104,14 @@
               <input class="visually-hidden" type="checkbox" name="additional" value="vitamins" id="vitamins">
               <label class="form__label-checkbox selectable-label" for="vitamins" tabindex="0">витамины</label>
             </div>
-            <!-- <div class="form__submit-container"><button class="form__submit site-button" type="submit">Отправить заявку</button></div> -->
+            <!-- <div class="form__submit-container"><button class="form__submit site-button"type="submit">Отправить заявку</button></div> -->
             <button class="form__submit site-button" type="submit">Отправить заявку</button>
-            <p class="form__note site-paragraph"><sup>*</sup> &mdash; Обязательные поля</p>
+            <p class="form__note site-paragraph">* &mdash; Обязательные поля</p>
           </div>
-        </fieldset>
-      </form>
-    </div>
+        </div>
+      </fieldset>
+    </form>
+    <!-- </div> -->
   </main>
 
   <footer class="main-footer">
@@ -111,7 +130,7 @@
     </div>
     <div class="main-footer__bar">
       <div class="footer-bar__container site-container footer-bar">
-        <a class="footer-baf__logo" href="index.html"><img src="img/footer-logo.svg" alt="Cat Energy logo" width="128" height="24"></a>
+        <a class="footer-bar__logo" href="index.html"><img src="img/footer-logo.svg" alt="Cat Energy logo" width="128" height="24"></a>
         <div class="footer-bar__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
@@ -134,4 +153,5 @@
   </footer>
   <script src="js/script.js"></script>
 </body>
+
 </html>
