@@ -98,6 +98,31 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  .form__contacts & {
+    position: relative;
+    padding-right: 35px;
+    border-color: @color-special-grey;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50px;
+      width: 20px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--email::after {
+      background-image: url("../img/post-icon.svg");
+    }
+
+    &--tel::after {
+      background-image: url("../img/phone-icon.svg");
+    }
+  }
 }
 
 .form__input {
@@ -131,31 +156,7 @@
   }
 
   .form__contacts & {
-    position: relative;
-    padding-right: 40px;
-    // background-color: transparent;
-    border-color: @color-special-grey;
-
-    &::after {
-      content: "";
-      // position: absolute;
-      // top: 0;
-      // right: 0;
-      display: inline-block;
-      width: 20px;
-      height: 14px;
-      margin-right: 15px;
-      background-repeat: repeat;
-      background-position: center;
-    }
-
-    &--email::after {
-      background-image: url("../img/post-icon.svg");
-    }
-
-    &--tel::after {
-      background-image: url("../img/phone-icon.svg");
-    }
+    padding-right: 45px;
   }
 }
 
