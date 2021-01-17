@@ -36,12 +36,9 @@
         <div class="form-main__wrapper site-container">
           <div class="form__main-data">
             <div class="form__metrics">
-              <label class="form__label">Имя:<sup>*</sup> <input class="form__input" type="text" name="name"
-                  placeholder="Барсик" required></label>
-              <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight"
-                  placeholder="7" required></label>
-              <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age"
-                  placeholder="7"></label>
+              <label class="form__label">Имя:<sup>*</sup> <input class="form__input" type="text" name="name" placeholder="Барсик" required></label>
+              <label class="form__label">Вес (кг):<sup>*</sup> <input class="form__input" type="number" name="weight" min="0" placeholder="7" required></label>
+              <label class="form__label">Возраст (лет): <input class="form__input" type="number" name="age" min="0" placeholder="7"></label>
             </div>
             <div class="form__feeding-type-list">
               <div>
@@ -54,8 +51,7 @@
               </div>
               <div>
                 <input class="visually-hidden" type="radio" name="feeding_type" value="unknown" id="unknown">
-                <label class="form__label-radio selectable-label" for="unknown" tabindex="0">не знаю (нужен ваш
-                  совет)</label>
+                <label class="form__label-radio selectable-label" for="unknown" tabindex="0">не знаю (нужен ваш совет)</label>
               </div>
             </div>
           </div>
@@ -68,12 +64,10 @@
         <div class="form-main__wrapper site-container">
           <div class="form__contacts">
             <!-- <div class="form__input-container"> -->
-            <label class="form__label">E-mail:<sup>*</sup> <input class="form__input form__input--email" type="email"
-                name="email" placeholder="kuklachev@gmail.com" required></label>
+            <label class="form__label">E-mail:<sup>*</sup> <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
             <!-- </div> -->
             <!-- <div class="form__input-container"> -->
-            <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel"
-                name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
+            <label class="form__label">Телефон:<sup>*</sup> <input class="form__input form__input--tel" type="tel" name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
             <!-- </div> -->
           </div>
         </div>
@@ -95,10 +89,8 @@
         <div class="form-main__wrapper site-container">
           <div class="form__additionally-list">
             <div>
-              <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute"
-                id="sugar_substitute" checked>
-              <label class="form__label-checkbox selectable-label" for="sugar_substitute"
-                tabindex="0">сахарозаменитель</label>
+              <input class="visually-hidden" type="checkbox" name="additional" value="sugar_substitute" id="sugar_substitute" checked>
+              <label class="form__label-checkbox selectable-label" for="sugar_substitute" tabindex="0">сахарозаменитель</label>
             </div>
             <div>
               <input class="visually-hidden" type="checkbox" name="additional" value="drink_water" id="drink_water">
@@ -114,7 +106,7 @@
             </div>
             <!-- <div class="form__submit-container"><button class="form__submit site-button"type="submit">Отправить заявку</button></div> -->
             <button class="form__submit site-button" type="submit">Отправить заявку</button>
-            <p class="form__note site-paragraph"><sup>*</sup> &mdash; Обязательные поля</p>
+            <p class="form__note site-paragraph">* &mdash; Обязательные поля</p>
           </div>
         </div>
       </fieldset>
@@ -138,7 +130,7 @@
     </div>
     <div class="main-footer__bar">
       <div class="footer-bar__container site-container footer-bar">
-        <a class="footer-baf__logo" href="index.html"><img src="img/footer-logo.svg" alt="Cat Energy logo" width="128" height="24"></a>
+        <a class="footer-bar__logo" href="index.html"><img src="img/footer-logo.svg" alt="Cat Energy logo" width="128" height="24"></a>
         <div class="footer-bar__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
