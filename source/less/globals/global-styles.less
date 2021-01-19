@@ -141,10 +141,16 @@
   border: none;
   .set-font(@font-size: 16px, @line-height: 20px, @font-color: #ffffff, @text-transform: uppercase);
   text-align: center;
-
   background-color: @color-base-green;
-
   cursor: pointer;
+
+  &:hover {
+    background-color: @color-base-green2;
+  }
+
+  &:active {
+    color: #8ec36d;
+  }
 }
 
 .visually-hidden {
