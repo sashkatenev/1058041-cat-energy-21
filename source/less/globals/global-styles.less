@@ -109,9 +109,8 @@
     }
   }
 
-  & legend {
-    padding: 0;
-
+  & legend,
+  & h2 {
     @media (min-width: @large-width) {
       grid-column: ~"2 / 3";
       display: grid;
@@ -126,6 +125,10 @@
         margin-left: 42px;
       }
     }
+  }
+
+  & legend {
+    padding: 0;
   }
 }
 
