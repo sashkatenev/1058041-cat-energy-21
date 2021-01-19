@@ -33,19 +33,15 @@
 
   @media (min-width: @medium-width) {
     min-height: 511px;
-    padding: 0 37px 40px 39px;
-    background: linear-gradient(to top, @color-base-grey 430px, #ffffff 430px);
+    padding: 0 38px 40px 38px;
+    background: linear-gradient(to bottom, #ffffff 80px, @color-base-grey 80px);
 
     &:last-child {
-      align-self: end;
       min-height: 429px;
+      margin-top: 80px;
       background: #ffffff;
       border: 1px solid @color-base-grey;
     }
-  }
-
-  @media (min-width: @large-width) {
-    padding: 0 38px 40px 39px;
   }
 
   &:last-child {
