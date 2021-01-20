@@ -25,7 +25,7 @@
   </header>
 
   <main class="catalog-main">
-    <div class="catalog-main__wrapper site-container">
+    <div class="catalog-main__container site-container">
       <h1 class="catalog-main__title site-title-level1">Каталог продукции</h1>
       <section class="products">
         <h2 class="visually-hidden">Основные товары</h2>
@@ -56,7 +56,7 @@
           <li class="products__item">
             <div class="product">
               <h3 class="product__title">Cat Energy Pro 1000 г</h3>
-              <img class="product__picture" src="img/products/product-02.png" alt="Для желающих быстро набрать массу и также любящих курочку" width="68" height="78">
+              <img class="product__picture" src="img/products/product-02.png" alt="Для желающих быстро набрать массу и также любящих курочку" width="84" height="101">
               <table class="product__properties">
                 <thead>
                   <tr class="product__property-names">
@@ -200,9 +200,13 @@
           </li>
         </ul>
       </section>
+    </div>
 
-      <section class="add-products">
-        <h2 class="add-products__title site-group-title">Дополнительные товары</h2>
+    <div class="add-products">
+      <div class="add-products__title-container site-group-title">
+        <h2 class="add-products__title">Дополнительные товары</h2>
+      </div>
+      <div class="add-products__container site-container">
         <table class="add-products__list">
           <thead class="visually-hidden">
             <tr>
@@ -221,7 +225,7 @@
             </tr>
             <tr class="add-products__item add-product">
               <td class="add-product__title">Питьевая вода</td>
-              <td class="add-product__number">5 л</td>
+              <td class="add-product__number">5 литров</td>
               <td class="add-product__price">50 Р.</td>
               <td class="add-product__order"><button class="add-product__button site-button" type="button">Заказать</button></td>
             </tr>
@@ -242,8 +246,9 @@
         <div class="add-products__gift gift">
           <p class="gift__offer">Закажите всё <br>и получите чехол для кота в подарок!</p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <!-- </div> -->
   </main>
 
   <footer class="main-footer">

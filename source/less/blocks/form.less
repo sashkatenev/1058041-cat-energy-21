@@ -101,14 +101,13 @@
 
   .form__contacts & {
     position: relative;
-    padding-right: 35px;
     border-color: @color-special-grey;
 
     &::after {
       content: "";
       position: absolute;
       top: 0;
-      right: 50px;
+      right: 15px;
       width: 20px;
       height: 100%;
       background-repeat: no-repeat;
@@ -238,6 +237,14 @@
     min-height: 174px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    border-color: @color-special-grey;
+  }
+
+  &:focus {
+    border-color: @color-special-dark-grey;
   }
 }
 

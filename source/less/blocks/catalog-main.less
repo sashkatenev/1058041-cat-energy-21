@@ -1,3 +1,16 @@
 .catalog-main__title {
+  padding: 27px 0 40px;
   color: #000000;
+
+  @media (max-width: @small-width-only) {
+    .set-horizontal-border(@top: -1px, @left: -@site-container-horisontal-padding-small, @right: -@site-container-horisontal-padding-small, @color: #d9d9d9);
+  }
+
+  @media (min-width: @medium-width) {
+    padding: 25px 0 83px;
+  }
+
+  @media (min-width: @large-width) {
+    padding: 22px 0 84px;
+  }
 }

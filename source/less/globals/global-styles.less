@@ -109,9 +109,8 @@
     }
   }
 
-  & legend {
-    padding: 0;
-
+  & legend,
+  & h2 {
     @media (min-width: @large-width) {
       grid-column: ~"2 / 3";
       display: grid;
@@ -127,6 +126,19 @@
       }
     }
   }
+
+  & legend {
+    max-width: 190px;
+    padding: 0;
+
+    @media (min-width: 380px) {
+      max-width: 300px;
+    }
+
+    @media (min-width: 450px) {
+      max-width: none;
+    }
+  }
 }
 
 .site-button {
@@ -138,10 +150,16 @@
   border: none;
   .set-font(@font-size: 16px, @line-height: 20px, @font-color: #ffffff, @text-transform: uppercase);
   text-align: center;
-
   background-color: @color-base-green;
-
   cursor: pointer;
+
+  &:hover {
+    background-color: @color-base-green2;
+  }
+
+  &:active {
+    color: #8ec36d;
+  }
 }
 
 .visually-hidden {
