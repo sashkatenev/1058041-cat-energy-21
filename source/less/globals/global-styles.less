@@ -128,7 +128,16 @@
   }
 
   & legend {
+    max-width: 190px;
     padding: 0;
+
+    @media (min-width: 380px) {
+      max-width: 300px;
+    }
+
+    @media (min-width: 450px) {
+      max-width: none;
+    }
   }
 }
 
