@@ -142,16 +142,6 @@
     transform: rotate(-45deg);
   }
 
-  // &:hover::before,
-  // &:hover::after {
-  //   opacity: 0.6;
-  // }
-
-  // &:active::before,
-  // &:active::after {
-  //   opacity: 0.3;
-  // }
-
   .site-navigation--closed & {
     &::before {
       top: 3px;
@@ -178,6 +168,11 @@
 .site-navigation__text-logo {
   padding: 24px 0;
   line-height: 0;
+
+  & svg {
+    fill: #111111;
+    // color: @color-special-dark-grey;
+  }
 
   @media (min-width: @medium-width) {
     display: none;

@@ -10,8 +10,15 @@
   <header class="main-header main-header--index site-container">
     <nav class="site-navigation site-navigation--no-js">
       <div class="site-navigation__logo-container">
-        <a class="site-navigation__image-logo"><img src="img/logo-mobile.svg" alt="Cat Energy logo" width="34" height="38"></a>
-        <a class="site-navigation__text-logo"><img src="img/logo-text-mobile.svg" alt="Cat Energy logo" width="101" height="18"></a>
+        <a class="site-navigation__image-logo">
+          <img src="img/logo-mobile.svg" alt="Cat Energy logo" width="34" height="38">
+        </a>
+        <a class="site-navigation__text-logo" aria-label="Cat Energy logo">
+          <!-- <img src="img/logo-text-mobile.svg" alt="Cat Energy logo" width="101" height="18"> -->
+          <svg role="img" width="101" height="18">
+            <use xlink:href="img/cat-energy-icons.svg#text-logo"></use>
+          </svg>
+        </a>
         <button class="site-navigation__toggler" type="button" aria-label="Открыть меню"></button>
       </div>
       <ul class="site-navigation__list">
@@ -147,26 +154,30 @@
     </div>
     <div class="main-footer__bar">
       <div class="footer-bar__container site-container footer-bar">
-        <a class="footer-bar__logo"><img src="img/footer-logo.svg" alt="Cat Energy logo" width="128" height="24"></a>
+        <a class="footer-bar__logo" aria-label="Cat Energy logo">
+          <svg role="img" width="128" height="24">
+            <use xlink:href="img/cat-energy-icons.svg#footer-logo"></use>
+          </svg>
+        </a>
         <div class="footer-bar__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
-                <svg width="23" height="13">
+                <svg role="img" width="23" height="13">
                   <use xlink:href="img/cat-energy-icons.svg#vk-logo"></use>
                 </svg>
                 Мы во ВКонтакте</a>
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--instagram" href="https://instagram.com/htmlacademy">
-                <svg width="16" height="16">
+                <svg role="img" width="16" height="16">
                   <use xlink:href="img/cat-energy-icons.svg#instagram-logo"></use>
                 </svg>
                 Мы в Instagram</a>
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--fb" href="https://facebook.com/htmlacademy">
-                <svg width="13" height="20">
+                <svg role="img" width="13" height="20">
                   <use xlink:href="img/cat-energy-icons.svg#fb-logo"></use>
                 </svg>
                 Мы в Facebook</a>
@@ -175,8 +186,8 @@
         </div>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__image-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34" role="img" aria-label="Логотип HTML-академии">
+          <a class="copyright__image-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML-академии">
+            <svg role="img" width="27" height="34" role="img">
               <use xlink:href="img/cat-energy-icons.svg#html-academy-logo"></use>
             </svg>
           </a>
