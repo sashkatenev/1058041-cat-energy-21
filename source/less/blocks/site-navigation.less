@@ -117,7 +117,8 @@
 .site-navigation__toggler {
   position: relative;
   justify-self: flex-end;
-  margin-right: 2px;
+  padding: 0;
+  // margin-right: 2px;
   width: 22px;
   height: 22px;
   background-color: transparent;
@@ -176,5 +177,19 @@
 
   @media (min-width: @medium-width) {
     display: none;
+  }
+}
+
+.site-navigation__image-logo img {
+  width: 34px;
+  height: 38px;
+
+  @media (min-width: @medium-width) {
+    width: 174px;
+    height: auto;
+  }
+
+  @media (min-width: @large-width) {
+    width: 202px;
   }
 }
