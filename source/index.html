@@ -14,14 +14,8 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Cat Energy logo" width="34" height="38">
+            <img src="img/logo-mobile.svg" alt="Cat Energy logo" width="191" height="38">
           </picture>
-        </a>
-        <a class="site-navigation__text-logo" aria-label="Cat Energy logo">
-          <!-- <img src="img/logo-text-mobile.svg" alt="Cat Energy logo" width="101" height="18"> -->
-          <svg role="img" width="101" height="18">
-            <use xlink:href="img/cat-energy-icons.svg#text-logo"></use>
-          </svg>
         </a>
         <button class="site-navigation__toggler" type="button" aria-label="Открыть меню"></button>
       </div>
@@ -38,7 +32,11 @@
       <div class="promo__wrapper site-container">
         <h1 class="promo__title site-title-level1">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/promo-mobile.png" alt="Образец корма для вашего кота" width="280" height="270">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/promo-desktop.png 1x, img/promo-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/promo-tablet.png 1x, img/promo-tablet@2x.png 2x">
+          <img class="promo__image" src="img/promo-mobile.png" srcset="img/promo-mobile@2x.png" alt="Образец корма для вашего кота">
+        </picture>
         <a class="promo__link site-button" href="form.html">Подобрать программу</a>
       </div>
     </section>
