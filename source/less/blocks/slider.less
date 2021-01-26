@@ -11,14 +11,14 @@
 
   @media (min-width: @medium-width) {
     grid-template-columns: auto 26px 1fr 21px auto;
-    padding: 20px 0 31px;
+    padding: 10px 0 31px;
   }
 }
 
 .slider__label {
   grid-row: ~"1 / 2";
   .set-font(@font-size: @font-size-base2, @line-height: 20px, @font-color: #000000, @text-transform: uppercase);
-  padding: 5px 0;
+  padding: 0;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
 
   @media (min-width: @medium-width) {
@@ -80,19 +80,19 @@
     border-radius: 50%;
     box-shadow:
       0 1px 3px 0 rgba(0, 0, 0, 0.16),
-      inset 0 0 0 13px #ffffff;
+      inset 0 0 0 12px #ffffff;
   }
 
   &:hover {
     box-shadow:
       0 2px 4px 0 rgba(0, 0, 0, 0.19),
-      inset 0 0 0 13px #ffffff;
+      inset 0 0 0 12px #ffffff;
   }
 
   &:active {
     border-color: @color-base-green;
     box-shadow:
       0 3px 5px 0 rgba(0, 0, 0, 0.2),
-      inset 0 0 0 13px #ffffff;
+      inset 0 0 0 12px #ffffff;
   }
 }

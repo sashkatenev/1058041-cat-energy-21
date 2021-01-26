@@ -22,6 +22,10 @@
 
 .socials__item {
   margin-right: 15px;
+  
+  @media (min-width: @medium-width) {
+    margin-right: 10px;
+  }
 
   &:nth-child(5n),
   &:last-child {
@@ -38,6 +42,23 @@
   color: @color-special-grey3;
   border-radius: 50%;
   text-decoration: none;
+
+  @media (min-width: @medium-width) {
+    &--vk svg {
+      width: 29px;
+      height: 17px;
+    }
+
+    &--instagram svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb svg {
+      width: 13px;
+      height: 27px;
+    }
+  }
 
   &:hover {
     color: @color-base-green;
