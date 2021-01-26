@@ -2,19 +2,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
-  max-width: 960px;
+  // max-width: 960px;
   padding-top: 28px;
   padding-bottom: 26px;
-
   background-color: transparent;
 
   @media (min-width: @medium-width) {
-    padding: 60px 40px;
+    // padding: 60px 40px;
+    padding: 60px;
   }
 
   @media (min-width: @large-width) {
-    width: @contacts-max-width;
-    box-sizing: border-box;
+    // width: @contacts-max-width;
+    // box-sizing: border-box;
     background-color: #ffffff;
   }
 }
@@ -22,18 +22,24 @@
 .contacts__invite {
   max-width: 170px;
   margin: 0;
-
   .set-font(@font-size: @font-size-base2, @line-height: 20px, @text-align: left, @font-color: #111111, @text-transform: uppercase);
+
+  @media (min-width: @medium-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__address {
   justify-self: end;
   max-width: 170px;
   margin: 0;
-
   .set-font(@line-height: 20px, @font-name: @font-name-base2, @font-color: @color-special-dark-grey);
-
   font-style: normal;
+
+  @media (min-width: @medium-width) {
+    font-size: @font-size-base2;
+  }
 
   @media (min-width: @medium-width) and (max-width: @large-width - 1) {
     text-align: right;
