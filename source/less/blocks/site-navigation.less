@@ -96,6 +96,10 @@
     color: fade(#000000, 30%);
   }
 
+  &:focus {
+    outline: 2px solid @color-special-dark-grey;
+  }
+
   @media (min-width: @medium-width) {
     padding: 12px 0 8px;
     font-size: 18px;
@@ -163,6 +167,10 @@
   @media (min-width: @medium-width) {
     display: none;
   }
+}
+
+.site-navigation__image-logo:focus {
+  outline: 2px solid @color-special-dark-grey;
 }
 
 .site-navigation__image-logo img {

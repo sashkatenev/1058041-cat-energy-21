@@ -1,6 +1,7 @@
 var siteNavigation = document.querySelector(".site-navigation");
 var siteNavigationToggleButton = document.querySelector(".site-navigation__toggler");
 var demoSlider = document.querySelector(".demo__slider");
+var formLabels = document.querySelectorAll(".selectable-label");
 
 if (siteNavigation) {
   siteNavigation.classList.add("site-navigation--closed");
@@ -13,6 +14,17 @@ if (siteNavigation) {
       }
       else {
         siteNavigation.classList.add("site-navigation--closed");
+      }
+    });
+  }
+}
+
+if (formLabels) {
+  for (var i = 0; i < formLabels.length; i++) {
+    formLabels[i].addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 13 || evt.keyCode === 32) {
+        evt.preventDefault();
+        this.click();
       }
     });
   }
