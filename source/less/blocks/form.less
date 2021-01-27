@@ -4,6 +4,10 @@
   @media (max-width: @small-width-only) {
     .set-horizontal-border(@top: -1px, @left: -@site-container-horisontal-padding-small, @right: -@site-container-horisontal-padding-small, @color: #d9d9d9);
   }
+
+  @media (min-width: @medium-width) {
+    padding: 20px 0 55px;
+  }
 }
 
 .form__message {
@@ -103,28 +107,43 @@
     position: relative;
     border-color: @color-special-grey;
 
-    // &::after {
     & svg {
       content: "";
       position: absolute;
-      top: 15px;
+      top: 16px;
       right: 15px;
       width: 20px;
       height: 100%;
       fill: @color-special-dark-grey2;
-      // background-repeat: no-repeat;
-      // background-position: center;
+
+      @media (min-width: @medium-width) {
+        top: 19px;
+        right: 17px;
+      }
     }
 
     &--email svg {
       stroke: @color-special-dark-grey2;
-      // background-image: url("../img/post-icon.svg");
+    }
+
+    &--tel svg {
+      top: 13px;
+      right: 13px;
+
+      @media (min-width: @medium-width) {
+        top: 15px;
+        right: 17px;
+      }
     }
   }
 }
 
 .form__label-note {
   padding-bottom: 7px;
+
+  @media (min-width: @medium-width) {
+    padding-bottom: 3px;
+  }
 }
 
 .form__input {
@@ -137,6 +156,12 @@
   margin-left: 15px;
   .set-font(@font-size: @font-size-base2, @line-height: 18px, @font-color: @color-special-dark-grey, @text-transform: uppercase);
   border: 1px solid #e7e7e7;
+
+  &[type="email"] {
+    @media (min-width: @medium-width) {
+      padding-left: 25px;
+    }
+  }
 
   &:invalid + svg {
     fill: @color-status-error;
@@ -157,11 +182,16 @@
   .form__contacts & {
     padding-right: 45px;
     margin-left: 11px;
+
+    @media (min-width: @medium-width) {
+      margin-left: 15px;
+    }
   }
 
   @media (min-width: @medium-width) {
     min-height: 52px;
-    margin-left: 15px;
+    padding: 5px 17px;
+    margin-left: 18px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -262,6 +292,7 @@
 
   @media (min-width: @medium-width) {
     min-height: 174px;
+    padding: 10px 18px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -320,7 +351,9 @@
   @media (min-width: @medium-width) {
     width: auto;
     padding-top: 16px;
+    // padding-right: 18px;
     padding-bottom: 16px;
+    // padding-left: 18px;
     margin-top: 22px;
     font-size: 20px;
     line-height: 20px;
@@ -337,7 +370,7 @@
 
   @media (min-width: @medium-width) {
     align-self: center;
-    margin-top: 22px;
+    margin-top: 18px;
     font-size: @font-size-base2;
     text-align: left;
   }
