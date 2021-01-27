@@ -8,6 +8,10 @@
   @media (min-width: @medium-width) {
     padding: 20px 0 55px;
   }
+
+  @media (min-width: @large-width) {
+    padding: 45px 0 57px;
+  }
 }
 
 .form__message {
@@ -223,6 +227,10 @@
   &::before {
     border-radius: 0;
     margin-right: 16px;
+
+    @media (min-width: @large-width) {
+      margin-right: 20px;
+    }
   }
 
   input:checked + &::before {
@@ -373,6 +381,10 @@
     margin-top: 18px;
     font-size: @font-size-base2;
     text-align: left;
+  }
+
+  @media (min-width: @large-width) {
+    margin-top: 22px;
   }
 }
 
