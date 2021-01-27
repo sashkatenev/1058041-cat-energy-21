@@ -67,12 +67,9 @@
 .site-group-title {
   display: grid;
   grid-template-columns: 20px auto 22px 1fr 20px;
-  .set-font(@font-size: @font-size-h3, @line-height: 26px, @font-color: #000000);
 
   @media (min-width: @medium-width) {
     grid-template-columns: 70px auto 1fr 65px;
-    font-size: @font-size-h2;
-    line-height: @font-size-h2;
   }
 
   @media (min-width: @large-width) {
@@ -109,8 +106,26 @@
     }
   }
 
-  & legend,
   & h2 {
+    .set-font(@font-size: @font-size-h3, @line-height: 26px, @font-color: #000000, @font-weight: normal);
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 230px;
+    padding: 0;
+
+    @media (min-width: 380px) {
+      max-width: 300px;
+    }
+
+    @media (min-width: 450px) {
+      max-width: none;
+    }
+
+    @media (min-width: @medium-width) {
+      font-size: @font-size-h2;
+      line-height: @font-size-h2;
+    }
+
     @media (min-width: @large-width) {
       grid-column: ~"2 / 3";
       display: grid;
@@ -124,19 +139,6 @@
         border-bottom: 2px solid @color-base-green;
         margin-left: 42px;
       }
-    }
-  }
-
-  & legend {
-    max-width: 190px;
-    padding: 0;
-
-    @media (min-width: 380px) {
-      max-width: 300px;
-    }
-
-    @media (min-width: 450px) {
-      max-width: none;
     }
   }
 }
