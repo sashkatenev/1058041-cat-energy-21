@@ -3,7 +3,6 @@
 
   @media (min-width: @medium-width) {
     background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
-    // background-color: #ffffff;
   }
 }
 
@@ -11,7 +10,6 @@
   @media (min-width: @large-width) {
     display: grid;
     grid-template-rows: auto auto auto;
-    // grid-template-rows: auto auto auto 1fr;
     grid-template-columns: 1fr 1fr;
     align-items: start;
   }
@@ -89,7 +87,6 @@
   grid-column: ~"1 / -1";
   justify-self: center;
   padding-top: 2px;
-  // margin-top: 20px;
   .set-font(@line-height: 20px, @font-color: #000000, @text-align: center, @text-transform: uppercase);
 
   @media (min-width: @medium-width) {
@@ -140,7 +137,6 @@
 .demo__presentation {
   grid-row: ~"1 / -1";
   grid-column: ~"2 / 3";
-  // align-self: end;
 
   @media (min-width: @medium-width) {
     padding-bottom: 33px;
@@ -148,7 +144,6 @@
 }
 
 .demo__image-container {
-  // grid-row: ~"-1 / -2";
   display: grid;
   grid-template-rows: auto auto;
 }
@@ -161,10 +156,6 @@
   justify-self: center;
   line-height: 0;
   overflow: hidden;
-
-  @media (min-width: @large-width) {
-    // transform: translateX(20px);
-  }
 }
 
 .demo__image-box img {
@@ -173,7 +164,6 @@
 }
 
 .demo__image-box--before {
-  // transform: translateX(-70px);
   transform: translateX(calc(-1 * var(--cat-before-width) / 4)); // на 1/4 ширины
 
   @media (min-width: @medium-width) {
@@ -190,13 +180,10 @@
   width: var(--cat-before-width);
   // height: 232px;
   height: auto;
-  // margin-right: -140px;
   margin-right: calc(-1 * var(--cat-before-width) / 2);   // на 1/2 ширины
 }
 
 .demo__image-box--after {
-  // transform: translateX(62.75px);
-  // transform: translateX(calc(var(--cat-after-width) / 4));
   transform: translateX(calc(var(--cat-after-width) / 4));
 
   @media (min-width: @medium-width) {
@@ -212,13 +199,10 @@
 .demo__image-box--after img {
   width: var(--cat-after-width);
   height: auto;
-  // margin-left: -125.5px;
   margin-left: calc(-1 * var(--cat-after-width) / 2);
 }
 
 .demo__slider {
-  // margin: 22px 40px 11px 44px;
-
   @media (min-width: @medium-width) {
     margin: 0 70px 0 69px;
   }
