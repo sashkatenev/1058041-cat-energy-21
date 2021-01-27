@@ -18,11 +18,16 @@
   margin: 0 auto;
   max-width: 240px;
   list-style: none;
+
+  @media (min-width: @medium-width) {
+    justify-content: flex-end;
+    margin-left: 22px;
+  }
 }
 
 .socials__item {
   margin-right: 15px;
-  
+
   @media (min-width: @medium-width) {
     margin-right: 10px;
   }
@@ -40,23 +45,26 @@
   width: 40px;
   height: 40px;
   color: @color-special-grey3;
-  border-radius: 50%;
+  // border-radius: 50%;
   text-decoration: none;
 
   @media (min-width: @medium-width) {
     &--vk svg {
       width: 29px;
       height: 17px;
+      margin-left: 2px;
     }
 
     &--instagram svg {
       width: 23px;
       height: 23px;
+      margin-left: 7px;
     }
 
     &--fb svg {
-      width: 13px;
-      height: 27px;
+      width: 14px;
+      height: 34px;
+      margin-left: 2px;
     }
   }
 
