@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="site-body">
   <header class="main-header main-header--index site-container">
@@ -156,18 +156,20 @@
     </div>
     <div class="main-footer__location location">
       <h2 class="visually-hidden">Как добраться</h2>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
-        <img class="location__image-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8">
-      </picture>
+      <div class="location__image-map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+          <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8">
+        </picture>
+      </div>
       <iframe class="location__interactive-map" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" height="362" allowfullscreen></iframe>
     </div>
     <div class="main-footer__bar">
       <div class="footer-bar__container site-container footer-bar">
         <a class="footer-bar__logo" aria-label="Cat Energy logo">
           <svg role="img" viewBox="0 0 128 24" width="128" height="24">
-            <use xlink:href="img/cat-energy-icons.svg#footer-logo"></use>
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
         <div class="footer-bar__socials socials">
@@ -199,14 +201,14 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__image-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML-академии">
             <svg role="img" viewBox="0 0 27 34" width="27" height="34" role="img">
-              <use xlink:href="img/cat-energy-icons.svg#html-academy-logo"></use>
+              <use xlink:href="img/sprite.svg#html-academy-logo"></use>
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
-  <!-- <script src="js/script.min.js"></script> -->
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.min.js"></script>
 </body>
 </html>

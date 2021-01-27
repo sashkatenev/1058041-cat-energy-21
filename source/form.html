@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: подбор программы питания</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="site-body">
@@ -70,13 +70,13 @@
         <div class="form-main__wrapper site-container">
           <div class="form__contacts">
             <label class="form__label form__label--email"><span class="form__label-note">E-mail:*</span> <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <svg role="img" width="19" height="14">
-                <use xlink:href="img/cat-energy-icons.svg#post-icon"></use>
+              <svg width="19" height="14" viewbox="0 0 19 14">
+                <path stroke-width="1.3" d="M.65 5.85v8M17.65 5.85v8M0 13.2h18M0 1.2h18M17.35 3.03L9 9.53.65 3.02V1.5h16.7v1.53z" fill="none" />
               </svg>
             </label>
             <label class="form__label form__label--tel"><span class="form__label-note">Телефон:*</span> <input class="form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="\d\ (\d{3}\) \d{3}-\d{2}-\d{2}" required>
-              <svg role="img" width="20" height="21">
-                <use xlink:href="img/cat-energy-icons.svg#phone-icon"></use>
+              <svg role="img" width="20" height="21" viewbox="0 0 20 21">
+                <path stroke-width="1.3" d="M17.9 9.8H9.4V11h8.5l-2.1 2 .9 1 3.1-3.1a.8.8 0 000-1l-3.1-3-.9.8 2.1 2zM8.1 19.8v-6.2a.7.7 0 00-.6-.6H3.1a1.2 1.2 0 001.2 1.2h2.5v5H3.1a1.8 1.8 0 01-1.9-1.7v-14a1.8 1.8 0 011.7-1.9h3.9v5H4.4a1.2 1.2 0 00-1.2 1.2h4.4a.6.6 0 00.6-.6V1a.9.9 0 00-.7-.6H3.1a3 3 0 00-3.1 3v13.9a3 3 0 002.9 3h4.6a.5.5 0 00.6-.4z" />
               </svg>
             </label>
           </div>
@@ -133,18 +133,20 @@
     </div>
     <div class="main-footer__location location">
       <h2 class="visually-hidden">Как добраться</h2>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
-        <img class="location__image-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8">
-      </picture>
+      <div class="location__image-map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+          <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8">
+        </picture>
+      </div>
       <iframe class="location__interactive-map" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" height="362" allowfullscreen></iframe>
     </div>
     <div class="main-footer__bar main-footer__bar--form">
       <div class="footer-bar__container site-container footer-bar">
         <a class="footer-bar__logo" href="index.html" aria-label="Cat Energy logo">
           <svg role="img" width="128" height="24" role="img">
-            <use xlink:href="img/cat-energy-icons.svg#footer-logo"></use>
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
         <div class="footer-bar__socials socials">
@@ -179,15 +181,15 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__image-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML-академии">
             <svg role="img" width="27" height="34">
-              <use xlink:href="img/cat-energy-icons.svg#html-academy-logo"></use>
+              <use xlink:href="img/sprite.svg#html-academy-logo"></use>
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
-  <!-- <script src="js/script.min.js"></script> -->
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
