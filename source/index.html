@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="site-body">
@@ -34,9 +33,13 @@
         <h1 class="promo__title site-title-level1">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/promo-desktop.png 1x, img/promo-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/promo-tablet.png 1x, img/promo-tablet@2x.png 2x">
-          <img class="promo__image" src="img/promo-mobile.png" srcset="img/promo-mobile@2x.png" alt="Образец корма для вашего кота">
+          <img class="promo__image" src="img/promo-mobile.png" srcset="img/promo-mobile@2x.png 2x" alt="Образец корма для вашего кота">
         </picture>
         <a class="promo__link site-button" href="form.html">Подобрать программу</a>
       </div>
@@ -121,6 +124,10 @@
           <div class="demo__image-container">
             <div class="demo__image-box demo__image-box--before">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-before-desktop.webp 1x, img/cat-before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1440px)" srcset="img/cat-before-desktop.png 1x, img/cat-before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
                 <img class="demo__image" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="Вид кота до">
@@ -128,6 +135,10 @@
             </div>
             <div class="demo__image-box demo__image-box--after">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-after-desktop.webp 1x, img/cat-after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1440px)" srcset="img/cat-after-desktop.png 1x, img/cat-after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
                 <img class="demo__image" src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" alt="Вид кота после">
@@ -158,6 +169,10 @@
       <h2 class="visually-hidden">Как добраться</h2>
       <div class="location__image-map">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
           <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8">
@@ -208,7 +223,6 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="js/script.js"></script> -->
   <script src="js/script.min.js"></script>
 </body>
 </html>

@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: подбор программы питания</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -135,6 +134,10 @@
       <h2 class="visually-hidden">Как добраться</h2>
       <div class="location__image-map">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
           <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8">
@@ -188,7 +191,6 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="js/script.js"></script> -->
   <script src="js/script.min.js"></script>
 </body>
 
