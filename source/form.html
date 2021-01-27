@@ -12,8 +12,13 @@
   <header class="main-header site-container">
     <nav class="site-navigation site-navigation--no-js">
       <div class="site-navigation__logo-container">
-        <a class="site-navigation__image-logo" href="index.html"><img src="img/logo-mobile.svg" alt="Cat Energy logo" width="34" height="38"></a>
-        <a class="site-navigation__text-logo" href="index.html"><img src="img/logo-text-mobile.svg" alt="Cat Energy logo" width="101" height="18"></a>
+        <a class="site-navigation__image-logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Cat Energy logo" width="191" height="38">
+          </picture>
+        </a>
         <button class="site-navigation__toggler" type="button" aria-label="Открыть меню"></button>
       </div>
       <ul class="site-navigation__list">
@@ -63,12 +68,16 @@
         </div>
         <div class="form-main__wrapper site-container">
           <div class="form__contacts">
-            <!-- <div class="form__input-container"> -->
-            <label class="form__label form__label--email">E-mail:<sup>*</sup> <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
-            <!-- </div> -->
-            <!-- <div class="form__input-container"> -->
-            <label class="form__label form__label--tel">Телефон:<sup>*</sup> <input class="form__input" type="tel" name="tel" placeholder="8(960)900-60-90" pattern="\d\(\d{3}\)\d{3}-\d{2}-\d{2}" required></label>
-            <!-- </div> -->
+            <label class="form__label form__label--email"><span class="form__label-note">E-mail:*</span> <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <svg role="img" width="19" height="14">
+                <use xlink:href="img/cat-energy-icons.svg#post-icon"></use>
+              </svg>
+            </label>
+            <label class="form__label form__label--tel"><span class="form__label-note">Телефон:*</span> <input class="form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="\d\ (\d{3}\) \d{3}-\d{2}-\d{2}" required>
+              <svg role="img" width="20" height="21">
+                <use xlink:href="img/cat-energy-icons.svg#phone-icon"></use>
+              </svg>
+            </label>
           </div>
         </div>
       </fieldset>
@@ -125,7 +134,11 @@
     </div>
     <div class="main-footer__location location">
       <h2 class="visually-hidden">Как добраться</h2>
-      <img class="location__image-map" src="img/map.png" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8" width="320" height="362">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+        <img class="location__image-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Как нас найти: город Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8">
+      </picture>
       <!-- <iframe class="location__interactive-map" src="https://yandex.ru/map-widget/v1/-/CKqyAJzY" height="362" allowfullscreen></iframe> -->
     </div>
     <div class="main-footer__bar">

@@ -18,7 +18,7 @@
 }
 
 .form__main-data {
-  padding: 39px 0 26px;
+  padding: 38px 0 26px;
 
   @media (min-width: @medium-width) {
     padding: 66px 0 75px;
@@ -34,7 +34,7 @@
 }
 
 .form__metrics {
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 
   @media (min-width: @medium-width) {
     padding-bottom: 72px;
@@ -103,25 +103,28 @@
     position: relative;
     border-color: @color-special-grey;
 
-    &::after {
+    // &::after {
+    & svg {
       content: "";
       position: absolute;
-      top: 0;
+      top: 15px;
       right: 15px;
       width: 20px;
       height: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
+      fill: @color-special-dark-grey2;
+      // background-repeat: no-repeat;
+      // background-position: center;
     }
 
-    &--email::after {
-      background-image: url("../img/post-icon.svg");
-    }
-
-    &--tel::after {
-      background-image: url("../img/phone-icon.svg");
+    &--email svg {
+      stroke: @color-special-dark-grey2;
+      // background-image: url("../img/post-icon.svg");
     }
   }
+}
+
+.form__label-note {
+  padding-bottom: 7px;
 }
 
 .form__input {
@@ -130,10 +133,31 @@
   align-items: center;
   box-sizing: border-box;
   min-height: 45px;
-  padding: 10px 14px;
-  margin-left: 13px;
+  padding: 5px 14px;
+  margin-left: 15px;
   .set-font(@font-size: @font-size-base2, @line-height: 18px, @font-color: @color-special-dark-grey, @text-transform: uppercase);
   border: 1px solid #e7e7e7;
+
+  &:invalid + svg {
+    fill: @color-status-error;
+  }
+
+  &:disabled + svg {
+    fill: @color-base-green;
+  }
+
+  &[type="email"]:invalid + svg {
+    stroke: @color-status-error;
+  }
+
+  &[type="email"]:disabled + svg {
+    stroke: @color-base-green;
+  }
+
+  .form__contacts & {
+    padding-right: 45px;
+    margin-left: 11px;
+  }
 
   @media (min-width: @medium-width) {
     min-height: 52px;
@@ -148,14 +172,17 @@
 
   &:focus {
     border-color: @color-special-dark-grey;
+    border-width: 2px;
+  }
+
+  &:disabled {
+    border-color: @color-special-dark-grey;
+    border-width: 2px;
   }
 
   &:invalid {
     border-color: @color-status-error;
-  }
-
-  .form__contacts & {
-    padding-right: 45px;
+    border-width: 2px;
   }
 }
 
@@ -165,7 +192,7 @@
 
   &::before {
     border-radius: 0;
-    margin-right: 19px;
+    margin-right: 16px;
   }
 
   input:checked + &::before {
